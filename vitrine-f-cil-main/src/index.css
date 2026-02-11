@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  ============================================
+  DESIGN SYSTEM - LOJA DE BEBIDAS
+  ============================================
+  
+  Tema escuro com tons âmbar/dourado.
+  --primary: cor âmbar para botões e destaques
+  --whatsapp: verde do WhatsApp
+*/
+
+@layer base {
+  :root {
+    --background: 220 15% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 220 15% 14%;
+    --card-foreground: 40 20% 95%;
+    --popover: 220 15% 14%;
+    --popover-foreground: 40 20% 95%;
+
+    /* Cor Principal - Âmbar/Dourado */
+    --primary: 38 90% 50%;
+    --primary-foreground: 220 15% 10%;
+
+    --secondary: 220 12% 18%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 220 12% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 38 60% 20%;
+    --accent-foreground: 38 80% 80%;
+
+    /* WhatsApp Verde */
+    --whatsapp: 142 70% 45%;
+    --whatsapp-foreground: 0 0% 100%;
+
+    /* PIX */
+    --pix: 170 70% 45%;
+    --pix-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 12% 22%;
+    --input: 220 12% 22%;
+    --ring: 38 90% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .product-card {
+    @apply relative overflow-hidden rounded-lg bg-card shadow-sm transition-all duration-300 border border-border;
+  }
+
+  .product-card:hover {
+    @apply shadow-lg border-primary/30;
+    transform: translateY(-4px);
+  }
+
+  .qty-btn {
+    @apply inline-flex items-center justify-center w-8 h-8 text-sm font-bold rounded border border-border bg-secondary text-foreground transition-colors cursor-pointer select-none;
+  }
+
+  .qty-btn:hover {
+    @apply bg-primary/20 border-primary;
+  }
+
+  .qty-btn:active {
+    @apply bg-primary text-primary-foreground;
+  }
+}
