@@ -1,4 +1,4 @@
-import heroBanner from "@/assets/banner-cerveja.png";
+import heroBanner from "@/assets/oi.jpeg";
 
 const HeroBanner = () => {
   return (
