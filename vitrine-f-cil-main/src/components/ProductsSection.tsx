@@ -29,7 +29,7 @@ const numeroWhatsApp = "5571993039382";
 // Importando imagens - CERVEJAS GARRAFA
 // =============================================
 import cervejaGarrafa1Img from "@/assets/garrafa de sol.png";
-import cervejaGarrafa2Img from "@/assets/garrafa de sol.png";
+import cervejaGarrafa2Img from "@/assets/garrafa de brahma.jpg";
 import cervejaGarrafa3Img from "@/assets/garrafa de amstel.jpg";
 import cervejaGarrafa4Img from "@/assets/garrafa de heineken.jpg";
 import cervejaGarrafa5Img from "@/assets/garrafa de Budweiser.jpg";
